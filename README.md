@@ -20,7 +20,6 @@ This repository provides a working Python implementation of Paradex JWT authenti
 | `paradex_http_auth.py` | Example using JWT for HTTP request |
 | `.env.example` | Example env file |
 | `requirements.txt` | Python dependencies |
-| `.github/workflows/python-ci.yml` | CI check for Python compatibility |
 | `rust_jwt/` | Experimental Rust version |
 | `node_jwt/` | Experimental Node.js version |
 
