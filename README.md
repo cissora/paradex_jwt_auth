@@ -3,6 +3,8 @@
 
 This repository provides a working Python implementation of Paradex JWT authentication, tested and compatible with their latest production environment.
 
+Paradex offers robust documentation and additional community resources (which I highly recommend exploring in detail). However, developers may still encounter subtle inconsistencies or ambiguities when implementing JWT-based authentication flows — particularly around off-chain signature schemas, Pedersen hashing, and the precise structure of the authorization payloads. This repo was created to address those challenges with a working Python implementation that bridges Paradex’s SDK abstractions and its underlying cryptographic signing primitives. Through reverse-engineering message formats and normalizing .env usage across environments, I surfaced edge cases involving L1→L2 key derivation, keccak-prefixed messages, and JWT expiration handling. These insights are especially relevant for developers working across Python, Rust, or Node.js, where Paradex’s schema enforcement and onboarding logic demand exact replication of canonical byte representations. This repo provides a clean separation of signing logic, environment configuration, and REST client workflows — helping others bypass common JWT pitfalls and build production-grade integrations with confidence.
+
 ## Features
 
 - Uses the `paradex_py` SDK
