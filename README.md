@@ -27,7 +27,7 @@ This repository provides a working Python implementation of Paradex JWT authenti
 ## Getting Started
 
 ```bash
-git clone https://github.com/jlgiii/paradex_jwt_auth
+git clone https://github.com/cissora/paradex_jwt_auth
 cd paradex-jwt-auth-python
 python -m venv venv && source venv/bin/activate
 pip install -r requirements.txt
