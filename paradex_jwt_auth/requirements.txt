@@ -1,0 +1,3 @@
+python-dotenv
+paradex_py
+requests
