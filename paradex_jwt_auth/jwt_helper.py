@@ -1,4 +1,3 @@
-
 import os
 from dotenv import load_dotenv
 from paradex_py.api.api_client import ParadexApiClient
