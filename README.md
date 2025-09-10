@@ -45,9 +45,7 @@ python jwt_helper_debug.py
 ## Credits
 
 - Author: [(Twitter)](https://x.com/cissora)
-- Ethereum L1 Address: `0x950BD1C17FEA646d275d1442B01d390cB3313978`
-- Paradex Username: Dippy
-- Paradex L2 Address: `0x3132fa8f6a3f59c6c0dd3155ceef58b3a035142e6344922979b423db137b1ac`
+
 
 ## License
 
