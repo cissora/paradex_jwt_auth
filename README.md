@@ -1,6 +1,10 @@
 
 # Paradex JWT Auth (Python)
 
+
+December 2025 Comments -> Read_Me Edit: It's come to my attention that many struggle with custom JWT/Auth and/or have difficulty with the Paradex Python SDK. Before proceeding with my files to manually generate JWT I highly suggest you spend more time on their SDK and utilize their Websocket and Rest API files as a backbone. When you use the Paradex Python SDK the intended way, the SDK internally handles all JWT generation and authentication flows for you—meaning you don’t manually build message hashes, sign authentication payloads, or call the /auth endpoint yourself. You simply provide your L1 key (or only your L2 private key, depending on your setup. *L2 only is safer*).
+
+
 This repository provides a working Python implementation of Paradex JWT authentication, tested and compatible with their latest production environment.
 
 Paradex offers robust documentation and additional community resources (which I highly recommend exploring in detail). However, developers may still encounter subtle inconsistencies or ambiguities when implementing JWT-based authentication flows — particularly around off-chain signature schemas, Pedersen hashing, and the precise structure of the authorization payloads. This repo was created to address those challenges with a working Python implementation that bridges Paradex’s SDK abstractions and its underlying cryptographic signing primitives. Through reverse-engineering message formats and normalizing .env usage across environments, I surfaced edge cases involving L1→L2 key derivation, keccak-prefixed messages, and JWT expiration handling. These insights are especially relevant for developers working across Python, Rust, or Node.js, where Paradex’s schema enforcement and onboarding logic demand exact replication of canonical byte representations. This repo provides a clean separation of signing logic, environment configuration, and REST client workflows — helping others bypass common JWT pitfalls and build production-grade integrations with confidence.
