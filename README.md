@@ -1,5 +1,5 @@
 
-# Paradex JWT Auth (Python)
+# DEPRECATED 2026 - Paradex JWT Auth (Python)
 
 
 December 2025 Comments -> Read_Me Edit: It's come to my attention that many struggle with custom JWT/Auth and/or have difficulty with the Paradex Python SDK. Before proceeding with my files to manually generate JWT I highly suggest you spend more time on their SDK and utilize their Websocket and Rest API files as a backbone. When you use the Paradex Python SDK the intended way, the SDK internally handles all JWT generation and authentication flows for you—meaning you don’t manually build message hashes, sign authentication payloads, or call the /auth endpoint yourself. You simply provide your L1 key (or only your L2 private key, depending on your setup. *L2 only is safer*).
